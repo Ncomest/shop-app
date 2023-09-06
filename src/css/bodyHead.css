@@ -28,9 +28,10 @@
  text-transform: uppercase;
 }
 .shopDiv {
+ width: 1920px;
  display: flex;
  justify-content: end;
- padding-right: 80px;
+ margin: auto;
 }
 
 .ShopBoxImg {

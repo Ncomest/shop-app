@@ -1,0 +1,46 @@
+.popup {
+ z-index: 1;
+ position: fixed;
+ top: 35%;
+ left: 35%;
+ width: 850px;
+ padding: 60px 0px;
+ background-color: #d6d5d5;
+ border: 1px solid #000;
+ border-radius: 10px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+.popup-inner {
+ color: #e73c17;
+ display: flex;
+ flex-direction: column;
+ width: 80%;
+}
+
+.__popupWindow {
+ display: flex;
+ flex-direction: column;
+}
+.close-btn-popup {
+ position: absolute;
+ top: 20px;
+ right: 20px;
+ padding: 20px;
+}
+
+.btnLoginPopup {
+ width: 50%;
+ padding: 10px 20px;
+}
+
+.inputLogAndPass {
+ padding: 20px 0px;
+}
+
+.no-scroll {
+ overflow: hidden;
+}

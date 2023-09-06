@@ -6,6 +6,9 @@ import { useState } from "react";
 import RelatedProd from "./relatedProducts";
 
 const Wrapper = ({ id }) => {
+ /*
+ Выбор ID продукта
+ */
  const [selectedId, setSelectedId] = useState(0); // Используем состояние для хранения выбранного ID
 
  const handleSetSelectId = (id) => {
@@ -17,14 +20,14 @@ const Wrapper = ({ id }) => {
 
  const curProduct = products.find((product) => product.id === selectedId);
 
- /////////////////////////////// Кнопка выбора Desc Spec Rev
+ //Кнопка выбора Desc Spec Rev
  const [currentTab, setCurrentTab] = useState(0);
 
  const handleTabClick = (tabIndex) => {
   setCurrentTab(tabIndex);
  };
 
- ////////////////////////// Переменная количество единиц в корзину
+ // Переменная количество единиц в корзину
 
  const [count, setCount] = useState(1);
 
@@ -38,7 +41,7 @@ const Wrapper = ({ id }) => {
   }
  };
 
- ///////////////////////////Добавить в корзину
+ //Добавить в корзину
 
  const [basketCount, setBasketCount] = useState(0);
 
