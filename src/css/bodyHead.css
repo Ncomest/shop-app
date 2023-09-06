@@ -1,0 +1,221 @@
+.bodyHead {
+ display: flex;
+ justify-content: center;
+}
+
+.wrapp {
+ padding: 5px;
+ display: flex;
+ flex-direction: column;
+}
+
+.topwrap {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding-top: 90px;
+ padding-bottom: 5px;
+}
+
+.wrapName {
+ text-transform: uppercase;
+ font-size: 40px;
+ font-weight: 500;
+}
+
+.wrapNameText {
+ text-transform: uppercase;
+}
+.shopDiv {
+ display: flex;
+ justify-content: end;
+ padding-right: 80px;
+}
+
+.ShopBoxImg {
+ width: 24px;
+ height: 24px;
+ position: relative;
+ top: 30px;
+ left: 45px;
+}
+
+.shopBox {
+ position: relative;
+ background-color: #2f333a;
+ width: 120px;
+ height: 132px;
+}
+
+.priceBox {
+ background-color: #fff;
+ width: 84px;
+ height: 31px;
+ position: absolute;
+ bottom: 20px;
+ left: 18px;
+ border-radius: 15px;
+}
+.priceBox > p {
+ position: absolute;
+ bottom: -12px;
+ left: 20px;
+ color: #e73c17;
+ font-weight: 600;
+}
+
+.botwrap {
+ margin: auto;
+ display: grid;
+ grid-template-columns: 520px 694px 694px;
+}
+
+.sideBar {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.sideBar > div {
+ width: 200px;
+ height: 152px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.mainImage {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+.rightDiv {
+ padding-left: 70px;
+}
+
+ul {
+ padding-left: 20px;
+}
+
+li {
+ padding-top: 10px;
+}
+
+.gridSize {
+ display: grid;
+ grid-template-columns: repeat(3, auto);
+ padding: 20px 0px;
+}
+
+.gridSize > div {
+ opacity: 0.5;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 5px;
+}
+
+.sellsBox {
+ display: flex;
+ align-items: center;
+}
+
+.sellS {
+ padding: 5px 0px;
+ padding-right: 20px;
+ font-size: 32px;
+ font-weight: 700;
+}
+
+.selectAdd {
+ width: 1920px;
+ margin: auto;
+ align-items: center;
+}
+
+/*Flex*/
+.__flex {
+ display: flex;
+}
+
+.__alCenter {
+ display: flex;
+ align-items: center;
+}
+
+.__jusCenter {
+ display: flex;
+ justify-content: center;
+}
+
+.DesContainer {
+ width: 1000px;
+ margin: auto;
+}
+
+.descrP {
+ line-height: 1.5em;
+}
+
+.botDiv {
+ display: flex;
+ gap: 40px;
+ justify-content: center;
+}
+
+.curTab:hover {
+ cursor: pointer;
+ transition: 1s ease all;
+}
+
+.addOrDel {
+ font-size: 48px;
+ padding: 8px 16px;
+ margin-right: 20px;
+ border: none;
+ background-color: #fff;
+}
+
+.addOrDel:hover {
+ cursor: pointer;
+}
+
+.buyNow,
+.addToCart {
+ border: 1px solid #e73c17;
+ width: 200px;
+ height: 60px;
+}
+
+.buyNow {
+ color: #fff;
+ background-color: #e73c17;
+}
+.buyNow:hover {
+ cursor: pointer;
+ color: #fff;
+ background-color: #db6a51;
+}
+
+.addToCart {
+ color: #e73c17;
+}
+.addToCart:hover {
+ cursor: pointer;
+ color: #e73c17;
+}
+
+.btnDivAdd {
+ flex: 1 1 auto;
+ padding-right: 40px;
+}
+
+.curTab {
+ font-size: 24px;
+}
+
+html {
+ scroll-behavior: smooth;
+}

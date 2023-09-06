@@ -1,0 +1,182 @@
+.__global {
+  max-width: 1920;
+  padding: 5px;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+
+/*top header style*/
+.topHeader {
+  font-size: 16px;
+  background-color: #2f333a;
+  color: #fff;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  padding-left: 80px;
+}
+.topHRight {
+  display: flex;
+  font-size: 16px;
+  padding-right: 80px;
+  gap: 24px;
+}
+.middleHeader {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  padding-left: 80px;
+}
+
+.logo > p {
+  font-family: "Inconsolata", monospace;
+
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 0px 7px 6px rgba(0, 0, 0, 0.8);
+}
+
+.search > input {
+  border: none;
+  font-size: 20px;
+}
+.categorySearch {
+  display: flex;
+  gap: 20px;
+}
+
+.catgChoice {
+  list-style: none;
+
+  font-size: 20px;
+}
+
+.searchclick {
+  background-color: #2f333a;
+  width: 63px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contUs {
+  padding-left: 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.login {
+  display: flex;
+  font-size: 20px;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.card {
+  display: flex;
+  padding-right: 80px;
+  padding-left: 20px;
+  gap: 15px;
+}
+
+.mainHeader {
+  background-color: #2f333a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  height: 76px;
+}
+
+.categories {
+  min-width: 370px;
+  padding-left: 80px;
+}
+
+.tire {
+  display: inline-block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  position: relative;
+}
+
+.tire::before,
+.tire::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+}
+
+.tire::before {
+  top: -10px;
+}
+
+.tire::after {
+  bottom: -10px;
+}
+
+.catgcont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e73c17;
+}
+
+.catgcont > p {
+  font-size: 24px;
+  padding: 0px 25px;
+}
+
+.navBar {
+  display: flex;
+  justify-content: end;
+  gap: 60px;
+}
+
+.navBar > div {
+  display: flex;
+  align-items: center;
+}
+.navBar > div > p {
+  padding-left: 10px;
+}
+.navBar > div > a {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+.callBack {
+  width: 380px;
+  display: flex;
+  justify-content: center;
+  border-left: 1px solid #fff;
+}
+
+.headerContact {
+  font-size: 15px;
+  display: flex;
+  padding: 0px 10px;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.headerPhone {
+  display: flex;
+  padding: 5px 10px;
+  justify-content: center;
+}
