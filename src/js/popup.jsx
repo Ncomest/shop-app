@@ -32,11 +32,21 @@ function Popup(props) {
     )}
     <br />
     <button onClick={() => props.setTrigger(false)} className="close-btn-popup">
-     Close
+     X
     </button>
-    <button onClick={() => setLoginMode(!loginMode)}>
-     {loginMode ? "Registration" : "Login"}
-    </button>
+    <p onClick={() => setLoginMode(!loginMode)} className="changeRegistration">
+     {" "}
+     {loginMode ? (
+      <span>
+       If you don't have an account, you can{" "}
+       <span className="registration-text">Registration</span>
+      </span>
+     ) : (
+      <span>
+       If you have account <span className="registration-text">Login</span>
+      </span>
+     )}
+    </p>
    </div>
   </div>
  ) : (

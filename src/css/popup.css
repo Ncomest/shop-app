@@ -5,7 +5,7 @@
  left: 35%;
  width: 850px;
  padding: 60px 0px;
- background-color: #d6d5d5;
+ background-color: #e8e8e8;
  border: 1px solid #000;
  border-radius: 10px;
  display: flex;
@@ -26,21 +26,55 @@
  flex-direction: column;
 }
 .close-btn-popup {
+ border-radius: 50%;
  position: absolute;
  top: 20px;
  right: 20px;
- padding: 20px;
+ width: 50px;
+ height: 50px;
+ box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.close-btn-popup:hover {
+ font-size: 30px;
+}
+.close-btn-popup:active {
+ font-size: 30px;
+ box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .btnLoginPopup {
+ border-radius: 5px;
+ color: #fff;
+ background-color: #e73c17;
  width: 50%;
  padding: 10px 20px;
+ box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.btnLoginPopup:hover {
+ font-size: 22px;
+}
+.btnLoginPopup:active {
+ box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .inputLogAndPass {
- padding: 20px 0px;
+ padding: 15px 0px;
+}
+.inputLogAndPass:hover {
+ font-size: 22px;
 }
 
 .no-scroll {
  overflow: hidden;
+}
+
+.changeRegistration {
+ color: #000;
+}
+
+.registration-text {
+ color: #e73c17;
+}
+.registration-text:hover {
+ cursor: pointer;
 }
