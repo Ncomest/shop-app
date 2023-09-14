@@ -3,8 +3,11 @@ import microHeader from "../image/microHeader.png";
 import Frame from "../image/Frame.svg";
 import heart from "../image/heart.svg";
 import bi_cart from "../image/bi_cart.svg";
+import { useState } from "react";
 
 function Header({ setButtonPopup }) {
+ const [menuList, setmenuList] = useState(false);
+
  return (
   <div className="Header __global">
    <div className="topHeader">
@@ -58,10 +61,27 @@ function Header({ setButtonPopup }) {
    </div>
    <div className="mainHeader">
     <div className="categories">
-     <div className="catgcont">
-      <span className="tire"></span>
-      <p>All Categories</p>
-      <span>▼</span>
+     <div>
+      <div className="catgcont">
+       <span className="tire"></span>
+
+       <p>All Categories</p>
+
+       {menuList ? (
+        <span onClick={() => setmenuList(false)}>▲</span>
+       ) : (
+        <span onClick={() => setmenuList(true)}>▼</span>
+       )}
+      </div>
+
+      {menuList && (
+       <ul className="categ__menu_list">
+        <li className="categ__list">tv</li>
+        <li className="categ__list">phone</li>
+        <li className="categ__list">notebook</li>
+        <li className="categ__list">table</li>
+       </ul>
+      )}
      </div>
     </div>
     <nav className="navBar">
