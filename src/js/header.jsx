@@ -7,6 +7,8 @@ import { useState } from "react";
 
 function Header({ setButtonPopup }) {
  const [menuList, setmenuList] = useState(false);
+ const [langList, setLangList] = useState(false);
+ const [money, setMoney] = useState(false);
 
  return (
   <div className="Header __global">
@@ -15,9 +17,67 @@ function Header({ setButtonPopup }) {
      <p>Welcome to Needus & Get the best product</p>
     </div>
     <div className="topHRight">
-     <p>ENG ▼</p>
+     <div className="lang_list_main">
+      <p>ENG</p>
+
+      {langList && (
+       <ul className="lang_list">
+        <li>RU</li>
+        <li>GR</li>
+        <li>UK</li>
+       </ul>
+      )}
+     </div>
+
+     {langList ? (
+      <p
+       onClick={() => {
+        setLangList(false);
+       }}
+      >
+       ▲
+      </p>
+     ) : (
+      <p
+       onClick={() => {
+        setLangList(true);
+       }}
+      >
+       ▼
+      </p>
+     )}
+
      <p>|</p>
-     <p>USD ▼</p>
+
+     <div className="lang_list_main">
+      <p>USD </p>
+
+      {money && (
+       <ul className="lang_list">
+        <li>RU</li>
+        <li>KR</li>
+        <li>EUR</li>
+       </ul>
+      )}
+     </div>
+
+     {money ? (
+      <p
+       onClick={() => {
+        setMoney(false);
+       }}
+      >
+       ▲
+      </p>
+     ) : (
+      <p
+       onClick={() => {
+        setMoney(true);
+       }}
+      >
+       ▼
+      </p>
+     )}
     </div>
    </div>
    <div className="middleHeader">
@@ -87,23 +147,18 @@ function Header({ setButtonPopup }) {
     <nav className="navBar">
      <div>
       <a href="#">home</a>
-      <p>▼</p>
      </div>
      <div>
       <a href="#">about</a>
-      <p>▼</p>
      </div>
      <div>
       <a href="#">product</a>
-      <p>▼</p>
      </div>
      <div>
       <a href="#">pages</a>
-      <p>▼</p>
      </div>
      <div>
       <a href="#">contact</a>
-      <p>▼</p>
      </div>
     </nav>
     <div className="callBack">
