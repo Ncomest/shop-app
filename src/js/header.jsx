@@ -8,6 +8,7 @@ import { useState } from "react";
 function Header({ setButtonPopup }) {
  const [menuList, setmenuList] = useState(false);
  const [langList, setLangList] = useState(false);
+ const [categlist, setCateglist] = useState(false);
  const [money, setMoney] = useState(false);
 
  return (
@@ -88,10 +89,35 @@ function Header({ setButtonPopup }) {
      <input type="text" placeholder="Search Products" />
     </div>
     <div className="categorySearch">
-     <div>
-      <ul>
-       <li className="catgChoice">All Categories ▼</li>
-      </ul>
+     <div className="categ_search">
+      All Categories
+      {categlist ? (
+       <p
+        onClick={() => {
+         setCateglist(false);
+        }}
+       >
+        ▲
+       </p>
+      ) : (
+       <p
+        onClick={() => {
+         setCateglist(true);
+        }}
+       >
+        ▼
+       </p>
+      )}
+      {categlist && (
+       <div className="categ__container_list">
+        <ul>
+         <li className="catgChoice">TV</li>
+         <li className="catgChoice">Phone</li>
+         <li className="catgChoice">Notebook</li>
+         <li className="catgChoice">Table</li>
+        </ul>
+       </div>
+      )}
      </div>
      <div className="searchclick">
       <img

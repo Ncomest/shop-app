@@ -94,10 +94,40 @@
  gap: 20px;
 }
 
+.categ_search {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
+}
+
+.categ_search p {
+ cursor: pointer;
+}
+
 .catgChoice {
  list-style: none;
-
  font-size: 20px;
+ display: flex;
+ align-items: center;
+ justify-content: start;
+ padding: 1em 0em;
+ cursor: pointer;
+ 
+}
+
+.categ__container_list {
+ position: relative;
+}
+
+.categ__container_list ul {
+ background-color: #2f333a;
+ width: 100px;
+ color: #fff;
+ position: absolute;
+ top: 15px;
+ right: 10px;
+ transition: all ease 2s;
 }
 
 .searchclick {
@@ -107,6 +137,7 @@
  display: flex;
  align-items: center;
  justify-content: center;
+ cursor: pointer;
 }
 
 .contUs {
