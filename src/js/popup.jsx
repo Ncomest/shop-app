@@ -32,7 +32,7 @@ function Popup(props) {
     )}
     <br />
     <button onClick={() => props.setTrigger(false)} className="close-btn-popup">
-     X
+     <span>x</span>
     </button>
     <p onClick={() => setLoginMode(!loginMode)} className="changeRegistration">
      {" "}

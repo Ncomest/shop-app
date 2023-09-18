@@ -253,6 +253,14 @@ const styles = {
   overflow: "hidden",
   padding: "30px 0px",
  },
+
+ cursorPointer: {
+  cursor: "pointer",
+ },
+
+ colorMail: {
+  color: "rgb(231, 60, 23)",
+ },
 };
 
 export default styles;

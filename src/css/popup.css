@@ -25,6 +25,7 @@
  display: flex;
  flex-direction: column;
 }
+
 .close-btn-popup {
  border-radius: 50%;
  position: absolute;
@@ -34,8 +35,11 @@
  height: 50px;
  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
-.close-btn-popup:hover {
- font-size: 30px;
+
+.close-btn-popup:hover span {
+ font-size: 34px;
+ font-weight: 500;
+ transform: scale(2);
 }
 .close-btn-popup:active {
  font-size: 30px;
@@ -58,10 +62,24 @@
 }
 
 .inputLogAndPass {
- padding: 15px 0px;
+ padding: 10px 5px;
+ transition: font-size 0.5s ease-in-out, height 0.5s ease-in-out;
+ height: 22px;
+ border-radius: 5px;
+}
+
+.inputLogAndPass::selection {
+ background-color: #e73c17;
 }
 .inputLogAndPass:hover {
- font-size: 22px;
+ font-size: 24px;
+ height: 34px;
+}
+
+.inputLogAndPass:focus {
+ border-color: #e73c17;
+ border: 2px solid #e73c17;
+ outline: none;
 }
 
 .no-scroll {
