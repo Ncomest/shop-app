@@ -8,4 +8,4 @@ export { default as card2 } from "./card2.png";
 export { default as card3 } from "./card3.png";
 export { default as card4 } from "./card4.png";
 export { default as card5 } from "./card5.png";
-export { default as image5 } from "../image/tv/image5.png";
+// export { default as image5 } from "../image/tv/image5.jpg";

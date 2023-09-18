@@ -26,14 +26,7 @@ function App() {
 
  return (
   <div>
-   <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-    {/* <p>Email:</p>
-    <input type="text" className="inputLogAndPass" />
-    <p>Password:</p>
-    <input type="text" className="inputLogAndPass" />
-    <br />
-    <button className="btnLoginPopup">Login in</button> */}
-   </Popup>
+   <Popup trigger={buttonPopup} setTrigger={setButtonPopup}></Popup>
    <Header setButtonPopup={setButtonPopup} />
    <Wrapper id={0} />
    <Footer />

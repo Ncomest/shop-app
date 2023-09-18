@@ -5,7 +5,6 @@ function RelatedProd({ handleSetSelectId }) {
  const handleClick = (id) => {
   handleSetSelectId(id);
  };
-
  return (
   <div style={styles.relProd}>
    <div>

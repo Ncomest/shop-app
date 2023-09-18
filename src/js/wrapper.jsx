@@ -9,15 +9,19 @@ const Wrapper = ({ id }) => {
  /*
  Выбор ID продукта
  */
- const [selectedId, setSelectedId] = useState(0); // Используем состояние для хранения выбранного ID
+
+ // Используем состояние для хранения выбранного ID
+ const [selectedId, setSelectedId] = useState(0);
 
  const handleSetSelectId = (id) => {
   setSelectedId(id);
   setCurrentTab(0);
   setCount(1);
   window.scrollTo(0, 0);
+  // setImageProduct(curProduct.image0);
  };
 
+ // Поиск продукта по ID
  const curProduct = products.find((product) => product.id === selectedId);
 
  //Кнопка выбора Desc Spec Rev
@@ -28,7 +32,6 @@ const Wrapper = ({ id }) => {
  };
 
  // Переменная количество единиц в корзину
-
  const [count, setCount] = useState(1);
 
  const handleIncrement = () => {
@@ -42,12 +45,13 @@ const Wrapper = ({ id }) => {
  };
 
  //Добавить в корзину
-
  const [basketCount, setBasketCount] = useState(0);
 
  const handleAddBasket = () => {
   setBasketCount(parseInt(curProduct.sell * count) + basketCount);
  };
+
+ const [imageProduct, setImageProduct] = useState(curProduct.image0);
 
  return (
   <div className="wrapp">
@@ -77,21 +81,49 @@ const Wrapper = ({ id }) => {
    </div>
    <div className="botwrap">
     <div className="sideBar">
-     <div style={{ border: "1px solid red" }}>
-      <img style={{ height: "100px" }} src={curProduct.image1} alt="image1" />
+     <div /*style={{ border: "1px solid red" }}*/>
+      <img
+       style={{ height: "100px" }}
+       src={curProduct.image1}
+       alt="image1"
+       onClick={() => {
+        setImageProduct(curProduct.image1);
+       }}
+      />
      </div>
      <div>
-      <img style={{ height: "100px" }} src={curProduct.image2} alt="image2" />
+      <img
+       style={{ height: "100px" }}
+       src={curProduct.image2}
+       alt="image2"
+       onClick={() => {
+        setImageProduct(curProduct.image2);
+       }}
+      />
      </div>
      <div>
-      <img style={{ height: "100px" }} src={curProduct.image3} alt="image3" />
+      <img
+       style={{ height: "100px" }}
+       src={curProduct.image3}
+       alt="image3"
+       onClick={() => {
+        setImageProduct(curProduct.image3);
+       }}
+      />
      </div>
      <div>
-      <img style={{ height: "100px" }} src={curProduct.image4} alt="image4" />
+      <img
+       style={{ height: "100px" }}
+       src={curProduct.image4}
+       alt="image4"
+       onClick={() => {
+        setImageProduct(curProduct.image4);
+       }}
+      />
      </div>
     </div>
     <div className="mainImage">
-     <img style={{ height: "500px" }} src={curProduct.image0} alt="image5" />
+     <img style={{ height: "500px" }} src={imageProduct} alt="mainImg" />
     </div>
     <div className="rightDiv">
      <p>Brand: {curProduct.brand}</p>
