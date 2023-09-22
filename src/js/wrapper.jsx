@@ -4,6 +4,7 @@ import products from "./products";
 import Sizewrap from "./size";
 import { useState } from "react";
 import RelatedProd from "./relatedProducts";
+import { useEffect } from "react";
 
 const Wrapper = ({ id }) => {
  /*
@@ -18,13 +19,19 @@ const Wrapper = ({ id }) => {
   setCurrentTab(0);
   setCount(1);
   window.scrollTo(0, 0);
-  // setImageProduct(curProduct.image0);
  };
+
+ // Главная картинка, верное отображение
+ useEffect(() => {
+  if (curProduct) {
+   setImageProduct(curProduct.image0);
+  }
+ }, [selectedId]);
 
  // Поиск продукта по ID
  const curProduct = products.find((product) => product.id === selectedId);
 
- //Кнопка выбора Desc Spec Rev
+ // Кнопка выбора Desc Spec Rev
  const [currentTab, setCurrentTab] = useState(0);
 
  const handleTabClick = (tabIndex) => {
@@ -51,7 +58,7 @@ const Wrapper = ({ id }) => {
   setBasketCount(parseInt(curProduct.sell * count) + basketCount);
  };
 
- const [imageProduct, setImageProduct] = useState(curProduct.image0);
+ const [imageProduct, setImageProduct] = useState(null);
 
  return (
   <div className="wrapp">
@@ -147,7 +154,7 @@ const Wrapper = ({ id }) => {
       </li>
       <li>Eye Comfort Display: Low-Blue Light, Flicker-Free</li>
      </ul>
-     <Sizewrap />
+     <Sizewrap id={selectedId} />
      <p>USD(incl. of all taxes):</p>
      <div className="sellsBox">
       <div className="sellS">${curProduct.sell}</div>

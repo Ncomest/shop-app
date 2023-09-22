@@ -19,6 +19,14 @@ const products = [
   image2: require("../image/tv/image2.jpg"),
   image3: require("../image/tv/image3.jpg"),
   image4: require("../image/tv/image4.jpg"),
+  size: [
+   "106cm(42)",
+   "121cm(48)",
+   "139cm(55)",
+   "164cm(65)",
+   "186cm(77)",
+   "210cm(83)",
+  ],
  },
  {
   id: 1,
@@ -40,6 +48,7 @@ const products = [
   image2: require("../image/Phone/image2.jpg"),
   image3: require("../image/Phone/image3.jpg"),
   image4: require("../image/Phone/image4.jpg"),
+  size: ["red", "gold", "black", "grey", "", ""],
  },
  {
   id: 2,
@@ -61,6 +70,7 @@ const products = [
   image2: require("../image/notebook/image2.jpg"),
   image3: require("../image/notebook/image3.jpg"),
   image4: require("../image/notebook/image4.jpg"),
+  size: ["chrome", "purple", "black", "grey", "green", ""],
  },
 ];
 
