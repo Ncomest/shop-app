@@ -37,9 +37,9 @@ function Footer() {
       <p style={style.signIn}>Sign up our newsletter</p>
      </div>
     </div>
-    <div>
+    <div style={styles.flexAlignJust}>
      <input
-      style={style.inputSign}
+      style={{ ...styles.inputSign }}
       type="text"
       placeholder="Enter your email"
      />
@@ -53,12 +53,12 @@ function Footer() {
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit
       delectus dolor quam facilis deserunt omnis sequi earum nam fugiat!
      </p>
-     <div style={styles.footerMeta}>
-      <img src={Faceb} alt="Faceb" />
-      <img src={whatsup} alt="whatsup" />
-      <img src={inst} alt="insta" />
-      <img src={skype} alt="skype" />
-      <img src={youtube} alt="youtube" />
+     <div style={{ ...styles.footerMeta, ...styles.cursorPointer }}>
+      <img src={Faceb} style={styles.cursorPointer} alt="Faceb" />
+      <img src={whatsup} style={styles.cursorPointer} alt="whatsup" />
+      <img src={inst} style={styles.cursorPointer} alt="insta" />
+      <img src={skype} style={styles.cursorPointer} alt="skype" />
+      <img src={youtube} style={styles.cursorPointer} alt="youtube" />
      </div>
     </div>
     <div>

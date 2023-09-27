@@ -5,7 +5,7 @@ function RecomendProducts({ id, onClick }) {
  const getProduct = products.find((product) => product.id === id);
 
  return (
-  <div style={styles.flex} onClick={onClick}>
+  <div style={styles.flex}>
    <div style={styles.blockCont}>
     <div style={styles.discountAndPopular}>
      <div style={styles.dicount}>
@@ -26,7 +26,7 @@ function RecomendProducts({ id, onClick }) {
       </svg>
      </div>
     </div>
-    <div style={styles.imgContainer}>
+    <div style={styles.imgContainer} onClick={onClick}>
      <img style={styles.imgRec} src={getProduct.image0} alt="didknow" />
     </div>
     <div>

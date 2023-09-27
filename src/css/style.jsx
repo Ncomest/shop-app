@@ -120,7 +120,6 @@ const styles = {
   backgroundColor: "#dff0ff",
   width: "400px",
   height: "600px",
-  cursor: "pointer",
  },
 
  gadgetModel: {
@@ -185,7 +184,11 @@ const styles = {
 
  inputSign: {
   width: "450px",
-  height: "70px",
+  height: "65px",
+  border: "none",
+  outline: "none",
+  fontSize: "24px",
+  paddingLeft: "10px",
  },
 
  inputBtn: {
@@ -252,6 +255,7 @@ const styles = {
   height: "265px",
   overflow: "hidden",
   padding: "30px 0px",
+  cursor: "pointer",
  },
 
  cursorPointer: {
