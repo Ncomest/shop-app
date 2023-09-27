@@ -49,6 +49,24 @@
  height: 132px;
 }
 
+.countShopBox {
+ background-color: #e73c17;
+ width: 32px;
+ height: 32px;
+ border-radius: 50%;
+ position: absolute;
+ top: 12px;
+ right: 26px;
+}
+
+.countShopBox span {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: #fff;
+ line-height: 1.9;
+}
+
 .priceBox {
  background-color: #fff;
  width: 84px;

@@ -7,10 +7,6 @@ import RelatedProd from "./relatedProducts";
 import { useEffect } from "react";
 
 const Wrapper = ({ id }) => {
- /*
- Выбор ID продукта
- */
-
  // Используем состояние для хранения выбранного ID
  const [selectedId, setSelectedId] = useState(0);
 
@@ -21,7 +17,9 @@ const Wrapper = ({ id }) => {
   window.scrollTo(0, 0);
  };
 
+ // Поиск продукта по ID
  const curProduct = products.find((product) => product.id === selectedId);
+
  // Главная картинка, верное отображение
  useEffect(() => {
   if (curProduct) {
@@ -29,7 +27,8 @@ const Wrapper = ({ id }) => {
   }
  }, [selectedId, curProduct]); // Включаем selectedId и curProduct в зависимости
 
- // Поиск продукта по ID
+ // Изображение на мейн окно
+ const [imageProduct, setImageProduct] = useState(null);
 
  // Кнопка выбора Desc Spec Rev
  const [currentTab, setCurrentTab] = useState(0);
@@ -51,14 +50,15 @@ const Wrapper = ({ id }) => {
   }
  };
 
- //Добавить в корзину
+ // Число продуктов в корзине
+ const [countItem, setCountItem] = useState(null);
+ // Добавить в корзину сумму
  const [basketCount, setBasketCount] = useState(0);
 
  const handleAddBasket = () => {
   setBasketCount(parseInt(curProduct.sell * count) + basketCount);
+  setCountItem(count + countItem);
  };
-
- const [imageProduct, setImageProduct] = useState(null);
 
  return (
   <div className="wrapp">
@@ -81,6 +81,9 @@ const Wrapper = ({ id }) => {
        fill="#ffffff"
       />
      </svg>
+     <div className="countShopBox">
+      <span>{countItem}</span>
+     </div>
      <div className="priceBox">
       <p>${basketCount}</p>
      </div>
@@ -146,13 +149,11 @@ const Wrapper = ({ id }) => {
       {curProduct.model2}
      </h2>
      <ul>
-      <li>α9 Gen5 AI Processor with AI Picture Pro & AI 4K Upscaling</li>
-      <li>Pixel Dimming, Perfect Black, 100% Color Fidelity & Color Volume</li>
-      <li>Hands-free Voice Control, Always Ready</li>
-      <li>
-       Dolby Vision IQ with Precision Detail, Dolby Atmos, Filmmaker Mode
-      </li>
-      <li>Eye Comfort Display: Low-Blue Light, Flicker-Free</li>
+      <li>{curProduct.list1}</li>
+      <li>{curProduct.list2}</li>
+      <li>{curProduct.list3}</li>
+      <li>{curProduct.list4}</li>
+      <li>{curProduct.list5}</li>
      </ul>
      <Sizewrap id={selectedId} />
      <p>USD(incl. of all taxes):</p>

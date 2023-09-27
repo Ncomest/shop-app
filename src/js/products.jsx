@@ -27,6 +27,11 @@ const products = [
    "186cm(77)",
    "210cm(83)",
   ],
+  list1: "Lorem ipsum dolor sit amet consectetur.",
+  list2: "Lorem dolor  consectetur adipisicing elit.",
+  list3: "Lorem ipsum dolor sit amet adipisicing elit.",
+  list4: "Lorem sit amet consectetur adipisicing elit.",
+  list5: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
  },
  {
   id: 1,
@@ -49,6 +54,15 @@ const products = [
   image3: require("../image/Phone/image3.jpg"),
   image4: require("../image/Phone/image4.jpg"),
   size: ["red", "gold", "black", "grey", "", ""],
+  list1: "Lorem ipsum dolor sit amet  adipisicing elit. Consequuntur, vero.",
+  list2:
+   "Lorem ipsum dolor  amet consectetur adipisicing elit. Consequuntur, vero.",
+  list3:
+   "Lorem ipsum sit  consectetur adipisicing elit. Consequuntur, vero.",
+  list4:
+   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, vero.",
+  list5:
+   "Lorem  dolor sit amet consectetur adipisicing elit. Consequuntur, vero.",
  },
  {
   id: 2,
@@ -71,6 +85,11 @@ const products = [
   image3: require("../image/notebook/image3.jpg"),
   image4: require("../image/notebook/image4.jpg"),
   size: ["chrome", "purple", "black", "grey", "green", ""],
+  list1: "Lorem ipsum dolor  amet consectetur.",
+  list2: "Lorem ipsum dolor sit amet consectetur.",
+  list3: "Lorem ipsum  sit amet consectetur.",
+  list4: "Lorem dolor sit  consectetur.",
+  list5: "Lorem ipsum dolor sit amet.",
  },
 ];
 
