@@ -21,15 +21,15 @@ const Wrapper = ({ id }) => {
   window.scrollTo(0, 0);
  };
 
+ const curProduct = products.find((product) => product.id === selectedId);
  // Главная картинка, верное отображение
  useEffect(() => {
   if (curProduct) {
    setImageProduct(curProduct.image0);
   }
- }, [selectedId]);
+ }, [selectedId, curProduct]); // Включаем selectedId и curProduct в зависимости
 
  // Поиск продукта по ID
- const curProduct = products.find((product) => product.id === selectedId);
 
  // Кнопка выбора Desc Spec Rev
  const [currentTab, setCurrentTab] = useState(0);

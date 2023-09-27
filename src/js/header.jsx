@@ -12,7 +12,7 @@ function Header({ setButtonPopup }) {
  const [money, setMoney] = useState(false);
 
  return (
-  <div className="Header __global">
+  <div className="global">
    <div className="topHeader">
     <div className="topHLeft">
      <p>Welcome to Needus & Get the best product</p>
@@ -89,7 +89,7 @@ function Header({ setButtonPopup }) {
      <input type="text" placeholder="Search Products" />
     </div>
     <div className="categorySearch">
-     <div className="categ_search">
+     <div className="categSearch">
       All Categories
       {categlist ? (
        <p
@@ -109,7 +109,7 @@ function Header({ setButtonPopup }) {
        </p>
       )}
       {categlist && (
-       <div className="categ__container_list">
+       <div className="categContainerList">
         <ul>
          <li className="catgChoice">TV</li>
          <li className="catgChoice">Phone</li>
@@ -161,30 +161,30 @@ function Header({ setButtonPopup }) {
       </div>
 
       {menuList && (
-       <ul className="categ__menu_list">
-        <li className="categ__list">tv</li>
-        <li className="categ__list">phone</li>
-        <li className="categ__list">notebook</li>
-        <li className="categ__list">table</li>
+       <ul className="categMenuList">
+        <li className="categList">tv</li>
+        <li className="categList">phone</li>
+        <li className="categList">notebook</li>
+        <li className="categList">table</li>
        </ul>
       )}
      </div>
     </div>
     <nav className="navBar">
      <div>
-      <a href="#">home</a>
+      <a href="http://localhost:3000/">home</a>
      </div>
      <div>
-      <a href="#">about</a>
+      <a href="http://localhost:3000/">about</a>
      </div>
      <div>
-      <a href="#">product</a>
+      <a href="http://localhost:3000/">product</a>
      </div>
      <div>
-      <a href="#">pages</a>
+      <a href="http://localhost:3000/">pages</a>
      </div>
      <div>
-      <a href="#">contact</a>
+      <a href="http://localhost:3000/">contact</a>
      </div>
     </nav>
     <div className="callBack">
