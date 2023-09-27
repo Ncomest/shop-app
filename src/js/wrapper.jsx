@@ -6,7 +6,7 @@ import { useState } from "react";
 import RelatedProd from "./relatedProducts";
 import { useEffect } from "react";
 
-const Wrapper = ({ id }) => {
+const Wrapper = ({ id, countItem, setCountItem }) => {
  // Используем состояние для хранения выбранного ID
  const [selectedId, setSelectedId] = useState(0);
 
@@ -51,7 +51,7 @@ const Wrapper = ({ id }) => {
  };
 
  // Число продуктов в корзине
- const [countItem, setCountItem] = useState(null);
+ //  const [countItem, setCountItem] = useState(null);
  // Добавить в корзину сумму
  const [basketCount, setBasketCount] = useState(0);
 
@@ -81,9 +81,13 @@ const Wrapper = ({ id }) => {
        fill="#ffffff"
       />
      </svg>
-     <div className="countShopBox">
-      <span>{countItem}</span>
-     </div>
+     {countItem > 0 ? (
+      <div className="countShopBox">
+       <span>{countItem}</span>
+      </div>
+     ) : (
+      ""
+     )}
      <div className="priceBox">
       <p>${basketCount}</p>
      </div>

@@ -166,6 +166,20 @@
  gap: 15px;
 }
 
+.cardCount {
+ background-color: #e73c17;
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+}
+.cardCount span {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: #fff;
+ line-height: 1.9;
+}
+
 .mainHeader {
  background-color: #2f333a;
  display: flex;

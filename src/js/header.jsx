@@ -5,7 +5,7 @@ import heart from "../image/heart.svg";
 import bi_cart from "../image/bi_cart.svg";
 import { useState } from "react";
 
-function Header({ setButtonPopup }) {
+function Header({ countItem, setButtonPopup }) {
  const [menuList, setmenuList] = useState(false);
  const [langList, setLangList] = useState(false);
  const [categlist, setCateglist] = useState(false);
@@ -140,8 +140,16 @@ function Header({ setButtonPopup }) {
       </p>
      </div>
      <div className="card">
+      <div></div>
       <img src={heart} alt="heart" />
       <img src={bi_cart} alt="put" />
+      {countItem > 0 ? (
+       <div className="cardCount">
+        <span>{countItem}</span>
+       </div>
+      ) : (
+       ""
+      )}
      </div>
     </div>
    </div>

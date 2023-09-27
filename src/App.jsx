@@ -6,6 +6,8 @@ import Popup from "./js/popup";
 import { useState, useEffect } from "react";
 
 function App() {
+ // Переменная для itemCountBasket
+ const [countItem, setCountItem] = useState(null);
  //Кнопка вызова Popup
  const [buttonPopup, setButtonPopup] = useState(false);
 
@@ -27,8 +29,8 @@ function App() {
  return (
   <div>
    <Popup trigger={buttonPopup} setTrigger={setButtonPopup}></Popup>
-   <Header setButtonPopup={setButtonPopup} />
-   <Wrapper id={0} />
+   <Header setButtonPopup={setButtonPopup} countItem={countItem}/>
+   <Wrapper id={0} countItem={countItem} setCountItem={setCountItem}/>
    <Footer />
   </div>
  );
