@@ -40,6 +40,7 @@
  font-size: 34px;
  font-weight: 500;
  transform: scale(2);
+ line-height: 0.7;
 }
 .close-btn-popup:active {
  font-size: 30px;
